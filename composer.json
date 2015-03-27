@@ -1,0 +1,24 @@
+{
+  "name": "contaoblackforest/namespace-porting-tests",
+  "authors": [
+    {
+      "name": "Dominik Tomasi",
+      "email": "d.tomasi@upcom.ch"
+    },
+    {
+      "name": "Sven Baumann",
+      "email": "d.tomasi@upcom.ch"
+    }
+
+  ],
+  "require": {
+    "phpunit/phpunit": "3.7.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "BarNamespace\\": "src/",
+      "BarNamespace\\Tests\\": "tests/"
+    },
+    "files": ["src/namespace_compat.php"]
+  }
+}

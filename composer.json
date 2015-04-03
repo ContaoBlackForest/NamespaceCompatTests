@@ -1,5 +1,5 @@
 {
-  "name": "contaoblackforest/namespace-porting-tests",
+  "name": "blackforest/namespace-compat-tests",
   "authors": [
     {
       "name": "Dominik Tomasi",
@@ -9,7 +9,6 @@
       "name": "Sven Baumann",
       "email": "baumannsv@gmail.com"
     }
-
   ],
   "require": {
     "phpunit/phpunit": "3.7.*"
@@ -18,7 +17,14 @@
     "psr-4": {
       "BarNamespace\\": "src/",
       "BarNamespace\\Tests\\": "tests/"
-    },
-    "files": ["src/namespace_compat.php"]
+    }
+  },
+    "replace": {
+    "original/library": "self.version"
+  },
+  "extra": {
+    "namespace-compat": {
+      "FooNamespace": "BarNamespace"
+    }
   }
 }

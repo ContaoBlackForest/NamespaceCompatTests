@@ -1,5 +1,10 @@
 {
   "name": "blackforest/namespace-compat-tests",
+  "description":"Composer Namespace Compat Test",
+  "keywords":["composer", "namespace", "compat", "transfer", "abandoned", "test"],
+  "type":"library",
+  "license":"LGPL-3.0+",
+  "minimum-stability": "dev",
   "authors": [
     {
       "name": "Dominik Tomasi",
@@ -10,8 +15,14 @@
       "email": "baumannsv@gmail.com"
     }
   ],
+  "support":{
+    "issues":"https://github.com/black-forest-archive/namespace-compat-tests/issues",
+    "irc":"irc://irc.freenode.org/contao.dev",
+    "source":"https://github.com/black-forest-archive/namespace-compat-tests"
+  },
   "require": {
-    "phpunit/phpunit": "3.7.*"
+    "phpunit/phpunit": "3.7.*",
+    "blackforest/namespace-compat": "~1.0"
   },
   "autoload": {
     "psr-4": {
@@ -19,7 +30,7 @@
       "BarNamespace\\Tests\\": "tests/"
     }
   },
-    "replace": {
+  "replace": {
     "original/library": "self.version"
   },
   "extra": {
